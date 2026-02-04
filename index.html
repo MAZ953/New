@@ -60,6 +60,11 @@
             color: var(--primary-color);
         }
 
+        .ged{
+            height: 60px;
+        
+        }
+
         .nav-menu {
             display: flex;
             list-style: none;
@@ -338,13 +343,23 @@
             margin-bottom: 1rem;
         }
 
-        .service-card .web-dev-icon {
-            animation: zoomOutTurnRight 1s ease-out, shineGlow 2s ease-in-out infinite;
-            transform-origin: center center;
-            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            color: inherit;
-            filter: drop-shadow(0 0 8px rgba(30, 64, 175, 0.6));
+        
+
+        .service-card2 {
+            padding: 2.5rem;
+            border-top: 4px solid var(--primary-color);
+            text-align: center;
+            width: 50%;
+            margin-left: 300px;
         }
+
+        .service-card2 .service-icon2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+       
+
 
         @keyframes shineGlow {
             0%, 100% {
@@ -761,7 +776,8 @@
     <header>
         <nav class="container">
             <div class="navbar">
-                <div class="logo">GED SOLUTIONS</div>
+                <div class="logo">GED Bussines Solutions</div>
+
                 <ul class="nav-menu">
                     <li><a href="#home" class="nav-link active">Home</a></li>
                     <li><a href="#services" class="nav-link">Services</a></li>
@@ -931,23 +947,76 @@
             </div>
 
             <div class="services-grid">
-                
                 <div class="service-card">
+                    <span class="feature-icon" style="font-size: 4rem;">📄</span>
+                    <h2>Static Website Package</h2>
+                    <p style="color: var(--text-light); margin-bottom: 2rem;">
+                        Professional non-responsive static website with free 1-year domain included!
+                    </p>
                     
-                    <h2>BASIC WEBSITE DEVELOPMENT</h2>
-                    <P>Resposive Website up to 2 page SEO friendly</P>
-                </div>
+                    <div style="text-align: left; margin: 2rem 0;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Package Includes:</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">
+                                <span style="color: var(--primary-color); margin-right: 0.5rem;">✓</span>
+                                4 Pages: Home, About, Products, Contact
+                            </li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">
+                                <span style="color: var(--primary-color); margin-right: 0.5rem;">✓</span>
+                                Non-Responsive Design
+                            </li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">
+                                <span style="color: var(--primary-color); margin-right: 0.5rem;">✓</span>
+                                Free 1 Year Domain (.com, .in, .co.in)
+                            </li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">
+                                <span style="color: var(--primary-color); margin-right: 0.5rem;">✓</span>
+                                Basic SEO Setup
+                            </li>
+                            <li style="padding: 0.5rem 0;">
+                                <span style="color: var(--primary-color); margin-right: 0.5rem;">✓</span>
+                                Contact Form Integration
+                            </li>
+                        </ul>
+                    </div>
 
-                <div class="service-card">
-                    <h2>STANDANRD WEBSITE DEVELOPMENT</h2>
-                    <P>Hight Professional Website up to 7 page SEO friendly</P>
-                </div>
+                    <div style="text-align: left; margin: 2rem 0;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Product Listing Prices:</h3>
+                        <div style="background: var(--light-color); border-radius: 10px; padding: 1.5rem;">
+                            <div style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 2px solid var(--primary-color);">
+                                <strong>Products Range</strong>
+                                <strong>Price</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid #ddd;">
+                                <span>1-10 Products</span>
+                                <span style="color: var(--primary-color); font-weight: 600;">₹7,080</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid #ddd;">
+                                <span>1-20 Products</span>
+                                <span style="color: var(--primary-color); font-weight: 600;">₹11,800</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid #ddd;">
+                                <span>1-30 Products</span>
+                                <span style="color: var(--primary-color); font-weight: 600;">₹15,340</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid #ddd;">
+                                <span>1-40 Products</span>
+                                <span style="color: var(--primary-color); font-weight: 600;">₹17,700</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.75rem 0;">
+                                <span>1-50 Products</span>
+                                <span style="color: var(--primary-color); font-weight: 600;">₹18,800</span>
+                            </div>
+                        </div>
+                        <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-light);">
+                            *All prices include GST and free domain for 1 year
+                        </p>
+                    </div>
 
-                <div class="service-card">
-                    <h2>PREMIUME WEBSITE DEVELOPMENT</h2>
-                    <P>Resposive Website up to 2page SEO friendly</P>
+                    <div style="margin-top: 2rem;">
+                        <a href="#contact" class="btn btn-primary nav-link" style="width: 100%; text-align: center;">Order Now</a>
+                    </div>
                 </div>
-
             </div>
         </section>
 
@@ -1215,7 +1284,7 @@
         <section class="container">
             <h2 class="section-title">Who We Are</h2>
             <p style="max-width: 800px; margin: 0 auto 2rem; text-align: center; color: #666; line-height: 1.8;">
-                NEXA TECH IT SOLUTIONS is a leading IT services company based in Vadodara, Gujarat, specializing in web development, digital marketing, and graphic design. Founded in 2020, we have been helping businesses transform their digital presence and achieve their goals through innovative technology solutions.
+                GED Bussines Solutions SOLUTIONS is a leading IT services company based in Rajpipla, Gujarat, specializing in web development, digital marketing, and graphic design. Founded in 2020, we have been helping businesses transform their digital presence and achieve their goals through innovative technology solutions.
             </p>
             <p style="max-width: 800px; margin: 0 auto; text-align: center; color: #666; line-height: 1.8;">
                 Our team of experienced professionals is passionate about delivering high-quality services that exceed client expectations. With a focus on innovation, creativity, and customer satisfaction, we have successfully completed over 150 projects for clients across various industries.
@@ -1459,7 +1528,7 @@
                 }
                 
                 // Update active nav link
-                navLinks.forEach(l => l.classList.remove('active'));
+                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
                 link.classList.add('active');
                 
                 // Scroll to top
